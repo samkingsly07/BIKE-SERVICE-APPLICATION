@@ -12,7 +12,7 @@
 
 1.Install laravel in your system https://laravel.com/docs/8.x/installation
 
-2.Open the BSA folder in laravel
+2.Open the BSA folder in laravel server
 
 3.Run "php artisan serve" in terminal to activate the framework server
 
