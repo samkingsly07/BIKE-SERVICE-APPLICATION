@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body
+{
+    min-height:100vh;
+    background:#000000;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+     }
+}
+.loader {
+    color: #6bff90;
+    font-size: 20px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  @-webkit-keyframes load4 {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+
+  
+
+.navigation1
+{
+    position:fixed;
+    left: 30px;
+    font-size: 44px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    top: 10px;
+    pointer-events: none;
+    
+    
+}
+.navigation1 ul
+{
+    position :fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-left: 20px;
+    width:100%;
+    background:#000000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navigation1 ul li .icon
+{
+    position:fixed;
+    display : block;
+    min-width: 60px;
+    top: 0px;
+width: 100%;
+    line-height: 70px;
+
+}
+.navigation1 ul li .icon ion-icon
+{
+    font-size: 2.0em;
+    color:rgb(255, 255, 255);
+
+}
+.navigation1 ul li .title
+
+    {
+        display: block;
+
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-right: auto;
+        width: 100%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color:#ffffff;
+    
+    }
+
+.navigation1 ul li .img
+    {
+        display: block;
+        
+        width: 6.3%;
+    }
+.navigation1 ul li .img.active 
+    {
+        margin-left: 0px;
+    }
+.navigation 
+{
+    position:fixed;
+    top: 100px;
+    bottom: 20px;
+    left: 20px;
+    width: 70px;
+    box-sizing: initial;
+    border-radius: 20px;
+    border-left: 5px solid #6783FF;
+    background:#6783FF;
+    transition: width 0.6s;
+    overflow: hidden;
+}
+.navigation.active
+{
+    width: 200px;
+}
+.navigation ul
+{
+    position :absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top : 70px;
+    padding-left: 10px;
+}
+.navigation ul li
+{
+    position:relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active
+{
+    background:#000000;
+  
+}
+
+.navigation ul li b:nth-child(1)
+{
+    position:absolute;
+    top:-20px;
+    height:20px;
+    width:100%;
+    background:#000000;
+    display:none;
+}
+.navigation ul li b:nth-child(1)::before
+{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 45px;
+    background:#6783FF;
+}
+.navigation ul li b:nth-child(2)
+{
+    position:absolute;
+    bottom:-20px;
+    height:20px;
+    width:100%;
+    background:#000000;
+    display:none;
+}
+.navigation ul li b:nth-child(2)::before
+{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 45px;
+    background:#6783FF;
+}
+.navigation ul li.active b:nth-child(1)
+{
+    display: block;
+}
+.navigation ul li.active b:nth-child(2)
+{
+    display: block;
+}
+
+.navigation ul li a
+{
+    position:relative;
+    display : block;
+    width:100%;
+    display:flex;
+    text-decoration: none;
+    color:#fff;
+}
+.navigation ul li.active a
+{
+    color: #fff;
+}
+.navigation ul li a .icon
+{
+    position:relative;
+    display : block;
+    min-width: 60px;
+    height:60px;
+    line-height: 70px;
+    text-align: center;
+
+}
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.5em;
+
+}
+.navigation ul li a .title
+
+    {
+    position: relative;
+    display : block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+    
+    }
+   
+.toggle
+{
+    position:fixed;
+    top: 110px;
+    left: 38px;
+    width:40px;
+    height: 40px;
+    background:#6783FF;
+    border-radius : 10px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition: left 0.6s;
+}
+.toggle.active
+{
+    transition: left 0.6s;
+    left: 160px;
+    border-radius : 30px;
+    background:#ff4d89;
+}
+.toggle ion-icon 
+{
+    position:absolute;
+    color:#fff;
+    font-size: 34px;
+    display: none;
+}
+.toggle ion-icon.open
+{
+    font-size: 40px;
+    display: block;
+}
+.toggle.active ion-icon.open
+{
+    display: none; 
+}
+.toggle ion-icon.close
+{
+ display: none;
+}
+.toggle.active ion-icon.close
+{
+    display: block; 
+}
+.card {
+    position:fixed;
+    box-shadow: 0 0px 0px 0 rgb(238, 235, 235);
+    transition: 0.3s;
+    width: 92.5%;
+    left: 7%;
+    right: 150px;
+    top: 90px;
+    bottom: 20px;
+    pointer-events:painted;
+    border-radius: 30px;
+    text-align: center;
+    transition: left 0.6s;
+    transition: width 0.6s;
+    background:rgba(255, 255, 255, 0);
+    transition-property:initial;
+ }
+  
+  
+
+  .card.active
+   {  
+     left:15%
+    
+}
+  .card1 {
+    position:absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+    background:#1b1b1b;
+    border-radius: 30px;
+    width: 99%;
+    height: 99%;
+    left: 0px;
+    top: 10px;
+    margin-left: 0px;
+    text-align: bottom;
+    overflow-x:auto;
+ 
+    transition: width 0.6s;
+  
+ }
+
+ .card1.active {
+    width: 89%;
+ }
+ @media screen and (max-width: 92em) 
+ {
+    .card {
+        position:fixed;
+        box-shadow: 0 0px 0px 0 rgb(238, 235, 235);
+        transition: 0.3s;
+        width: 88%;
+        left: 10%;
+        right: 150px;
+        top: 90px;
+        bottom: 20px;
+        pointer-events:painted;
+        border-radius: 30px;
+        text-align: center;
+        transition: left 0.6s;
+        transition: width 0.6s;
+        background:rgba(255, 255, 255, 0);
+        transition-property:initial;
+     }
+      
+      
+    
+      .card.active
+       {  
+         left:20%
+        
+    }
+      .card1 {
+        position:absolute;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+        background:#1b1b1b;
+        border-radius: 30px;
+        width: 99%;
+        height: 99%;
+        left: 0px;
+        top: 10px;
+        margin-left: 0px;
+        text-align: bottom;
+        overflow-x:auto;
+     
+        transition: width 0.6s;
+      
+     }
+ }
+ @media screen and (max-width: 72em) 
+ {
+    .card {
+        position:fixed;
+        box-shadow: 0 0px 0px 0 rgb(238, 235, 235);
+        transition: 0.3s;
+        width: 87%;
+        left: 10%;
+        right: 150px;
+        top: 90px;
+        bottom: 20px;
+        pointer-events:painted;
+        border-radius: 30px;
+        text-align: center;
+        transition: left 0.6s;
+        transition: width 0.6s;
+        background:rgba(255, 255, 255, 0);
+        transition-property:initial;
+     }
+      
+      
+    
+      .card.active
+       {  
+         left:23%
+        
+    }
+      .card1 {
+        position:absolute;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+        background:#1b1b1b;
+        border-radius: 30px;
+        width: 99%;
+        height: 99%;
+        left: 0px;
+        top: 10px;
+        margin-left: 0px;
+        text-align: bottom;
+        overflow-x:auto;
+     
+        transition: width 0.6s;
+      
+     }
+ }
+ @media screen and (max-width: 62em) 
+ {
+    .card {
+        position:fixed;
+        box-shadow: 0 0px 0px 0 rgb(238, 235, 235);
+        transition: 0.3s;
+        width: 80%;
+        left: 13%;
+        right: 150px;
+        top: 90px;
+        bottom: 20px;
+        pointer-events:painted;
+        border-radius: 30px;
+        text-align: center;
+        transition: left 0.6s;
+        transition: width 0.6s;
+        background:rgba(255, 255, 255, 0);
+        transition-property:initial;
+     }
+      
+      
+    
+      .card.active
+       {  
+         left:29%
+        
+    }
+      .card1 {
+        position:absolute;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+        background:#1b1b1b;
+        border-radius: 30px;
+        width: 99%;
+        height: 99%;
+        left: 0px;
+        top: 10px;
+        margin-left: 0px;
+        text-align: bottom;
+        overflow-x:auto;
+     
+        transition: width 0.6s;
+      
+     }
+ }
+ @media screen and (max-width: 58em) 
+ {
+    .card {
+        position:fixed;
+        box-shadow: 0 0px 0px 0 rgb(238, 235, 235);
+        transition: 0.3s;
+        width: 77%;
+        left: 15%;
+        right: 150px;
+        top: 90px;
+        bottom: 20px;
+        pointer-events:painted;
+        border-radius: 30px;
+        text-align: center;
+        transition: left 0.6s;
+        transition: width 0.6s;
+        background:rgba(255, 255, 255, 0);
+        transition-property:initial;
+     }
+      
+      
+    
+      .card.active
+       {  
+         left:33%
+        
+    }
+      .card1 {
+        position:absolute;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+        background:#1b1b1b;
+        border-radius: 30px;
+        width: 99%;
+        height: 99%;
+        left: 0px;
+        top: 10px;
+        margin-left: 0px;
+        text-align: bottom;
+        overflow-x:auto;
+     
+        transition: width 0.6s;
+      
+     }
+ }
+ @media screen and (max-width: 40em) 
+ {
+    .card.active {
+
+        width: 130%;
+
+ }
+ .navigation1
+{
+    position:fixed;
+    left: 30px;
+    font-size: 44px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    top: 10px;
+    pointer-events: none;
+    
+    
+}
+.navigation1 ul
+{
+    position :fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-left: 20px;
+    width:100%;
+    background:#000000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navigation1 ul li .icon
+{
+    position:fixed;
+    display : block;
+
+
+
+}
+.navigation1 ul li .icon ion-icon
+{
+    font-size: 2.0em;
+    color:rgb(255, 255, 255);
+
+}
+.navigation1 ul li .title
+
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color:#ffffff;
+    
+    }
+    .navigation1 ul li .title.active 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		text-align: center;
+        width: 30%;
+    }
+.navigation1 ul li .img
+    {
+        display: block;
+        margin-left: 0px;
+ 
+        width: 15%;
+        top: 0px;
+        position:fixed;
+    }
+
+ .navigation 
+{
+    position:fixed;
+    top: 90px;
+    bottom: 20px;
+    left: 20px;
+    width: 90%;
+    box-sizing: initial;
+    border-radius: 20px;
+    border-left: 5px solid #6783FF;
+    background:#6783FF;
+    transition: width 0.6s;
+    transition: height 0.6s;
+    height: 10%;
+}
+.navigation.active
+{
+    height: 25%;
+    width: 90%;
+}
+.navigation ul
+{
+    position :absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top : 15px;
+    padding-left: 10px;
+}
+.navigation ul li
+{
+    position:relative;
+    list-style: none;
+    width: 96%;
+   border-radius: 20px;
+}
+.navigation ul li.active
+{
+    background:#fff;
+  
+}
+.navigation ul li b:nth-child(1)
+{
+    position:absolute;
+    top:-20px;
+    height:20px;
+    width:100%;
+    background:#fff;
+    display:none;
+}
+.navigation ul li b:nth-child(1)::before
+{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 45px;
+    background:#6600ff;
+}
+.navigation ul li b:nth-child(2)
+{
+    position:absolute;
+    bottom:-20px;
+    height:20px;
+    width:100%;
+    background:#fff;
+    display:none;
+}
+.navigation ul li b:nth-child(2)::before
+{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 45px;
+    background:#6600ff;
+}
+.navigation ul li.active b:nth-child(1)
+{
+    display: none;
+}
+.navigation ul li.active b:nth-child(2)
+{
+    display: none;
+}
+.navigation ul li a
+{
+    position:relative;
+    display : block;
+    width:100%;
+    display:flex;
+    text-decoration: none;
+    color:#fff;
+}
+.navigation ul li.active a
+{
+    color: #333;
+}
+.navigation ul li a .icon
+{
+    position:relative;
+    display : block;
+    min-width: 60px;
+    height:60px;
+    line-height: 70px;
+    text-align: center;
+    left: 30%;
+
+}
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.5em;
+
+}
+.navigation ul li a .title
+
+    {
+    position: relative;
+    display : block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+    left: 30%;
+    
+    }
+      
+.toggle
+{
+    position:fixed;
+    top: 2%;
+    left: 85%;
+    width:50px;
+    height: 50px;
+    background:#6600ff;
+    border-radius : 10px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    transition: left 0.6s;
+    display:block;
+}
+.toggle.active
+{
+    transition: left 0.6s;
+    left: 85%;
+    border-radius : 30px;
+    background:#ff4d89;
+}
+.toggle ion-icon 
+{
+
+    color:#fff;
+    display: none;
+	justify-content: center;
+	cursor: pointer;
+    display:flex;
+    justify-content: center;
+    transition: left 0.6s;
+    display:block;
+	position:fixed;
+    top: 2%;
+    left: 85%;
+    width:50px;
+    height: 50px;
+}
+.toggle ion-icon.open
+{
+    font-size: 40px;
+    display: block;
+}
+.toggle.active ion-icon.open
+{
+    display: none; 
+}
+.toggle ion-icon.close
+{
+ display: none;
+}
+.toggle.active ion-icon.close
+{
+    display: block; 
+}
+.card {
+    position:fixed;
+    box-shadow: 0 0px 0px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    width: 98%;
+    left:0px;
+    top: 30%;
+    bottom: 20px;
+    pointer-events:painted;
+    border-radius: 30px;
+    text-align: center;
+    transition: left 0.6s;
+    background:rgb(0, 0, 0);
+    transition-property:initial;
+    height: 120%;
+
+ }
+  
+  .card:hover {
+  
+    
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .card.active
+   {  
+   left:0px;
+   height: 100%;
+   width: 108%;
+   bottom: 20px;
+   transition-property:initial;
+  top: 50%;
+  }
+  .card1 {
+ 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+    background:#ff4d89;
+    border-radius: 30px;
+    width: 98%;
+    height: 50%;
+    left: 10px;
+    text-align: center;
+    transition: width 0.6s;
+  
+ }
+ .card2 
+ {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0);
+    background:#ff4d89;
+    border-radius: 30px;
+    width: 100%;
+    height: 40%;
+    left: 10px;
+    top: 60%;
+    text-align: center;
+    transition: width 0.6s;
+ }
+ 
+   
+}
+@media screen and (max-width: 40em) 
+{
+    .navigation 
+{
+    position:fixed;
+    top: 90px;
+    bottom: 20px;
+    left: 20px;
+    width: 90%;
+    box-sizing: initial;
+    border-radius: 20px;
+    border-left: 5px solid #6783FF;
+    background:#6783FF;
+    transition: width 0.6s;
+    transition: height 0.6s;
+    height: 12%;
+}
+.navigation.active
+{
+    height: 35%;
+    width: 90%;
+}
+}
+
