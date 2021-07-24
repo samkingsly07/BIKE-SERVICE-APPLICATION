@@ -18,6 +18,15 @@
 
 4.Import the userdb database file to the MYSQL Server.
 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=userdb
+DB_USERNAME=root
+DB_PASSWORD=root@123 
+
+## Change according to your server
+
 5.Run "php artisan migrate" in terminal to migrate the database and the framework database.
 
 6.Open the server(mentioned in step 3) in the browser .
