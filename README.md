@@ -1,3 +1,4 @@
+
 - 👋 Hi, I’m @samkingsly07
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
@@ -75,6 +76,6 @@ DB_PASSWORD=root@123
 1.Generating a resetting link in mail and intends to change the password.
 
 # Thank you
-
+<img width="1680" alt="Screenshot 2021-07-25 at 4 38 15 AM" src="https://user-images.githubusercontent.com/79350032/126883027-ac2075e6-906b-4723-acc8-be1f4a10642a.png">
 
 
