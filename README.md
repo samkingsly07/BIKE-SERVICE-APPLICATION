@@ -7,7 +7,7 @@
 
 
 # INSTALLING BSA
-### follow line by line instruction till the admin email changed is must.
+### following line by line instruction till the admin email changed is must.
 ### please use higher width to get best experience.
 
 1.Install laravel in your system https://laravel.com/docs/8.x/installation
