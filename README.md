@@ -22,7 +22,7 @@
 5.Run "php artisan migrate" in terminal to migrate the database and the framework database.
 
 6.Open the server(mentioned in step 3) in the browser .
-## Change according to your server
+## Change according to your server in .env file
 
 DB_CONNECTION=mysql
 
