@@ -5,7 +5,11 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
+# Tools used 
 
+1.Front-end : php laravel 
+
+2 Back-end  : MYSQL
 
 # INSTALLING BSA
 ### following line by line instruction till the admin email changed is must.
