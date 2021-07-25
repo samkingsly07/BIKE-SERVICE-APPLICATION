@@ -47,7 +47,7 @@ DB_PASSWORD=root@123
 
 2.If database connected the message will be displayed in admin login page.
 
-3.login admin using username = "admin" &  password  = "pass".
+3.Login admin using username = "admin" &  password  = "pass".
 
 4.After login goto the admin profile page in the navbar & update the admin email by using update email option because to recieve the mail from the application.
 
@@ -55,7 +55,7 @@ DB_PASSWORD=root@123
 
 6.Navigate to the home page of admin and you can see the ready for delievery and completed option after user started their bookings profile table will be update.
 
-7.select a index field to change the status.
+7.Select a index field to change the status.
 
 ## User Login
 
